@@ -1,7 +1,7 @@
 {
   "name": "qa_automation_lab",
   "version": "0.1.0",
-  "homepage": "https://qalabautomation.ddns",
+  "homepage": "https://qalabautomation.ddns.net",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
