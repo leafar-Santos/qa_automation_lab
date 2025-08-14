@@ -1,3 +1,4 @@
+// ... imports
 import { useState, useRef } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -34,28 +35,12 @@ export default function Login() {
   };
 
   return (
-    <div
-      className="login-card"
-      id="login-card"
-      data-testid="login-card"
-      data-qa="login-card"
-    >
-      <h1
-        className="login-title"
-        id="login-title"
-        data-testid="login-title"
-        data-qa="login-title"
-      >
+    <div className="login-card" id="login-card" data-testid="login-card" data-qa="login-card">
+      <h1 className="login-title" id="login-title" data-testid="login-title" data-qa="login-title">
         Entrar no Auto Teste Lab
       </h1>
 
-      <label
-        className="login-label"
-        htmlFor="usuario-input"
-        id="usuario-label"
-        data-testid="usuario-label"
-        data-qa="usuario-label"
-      >
+      <label className="login-label" htmlFor="usuario-input" id="usuario-label" data-testid="usuario-label" data-qa="usuario-label">
         Usuário
       </label>
       <input
@@ -71,13 +56,7 @@ export default function Login() {
         placeholder="Digite seu usuário"
       />
 
-      <label
-        className="login-label"
-        htmlFor="senha-input"
-        id="senha-label"
-        data-testid="senha-label"
-        data-qa="senha-label"
-      >
+      <label className="login-label" htmlFor="senha-input" id="senha-label" data-testid="senha-label" data-qa="senha-label">
         Senha
       </label>
       <input
@@ -92,12 +71,11 @@ export default function Login() {
         placeholder="Digite sua senha"
       />
 
-      <div
-        className="login-actions"
-        id="login-actions"
-        data-testid="login-actions"
-        data-qa="login-actions"
-      >
+    
+      <p className="login-info">Usuario padrão: <strong>admin</strong></p>
+      <p className="login-info">Senha padrão: <strong>admin</strong></p>
+
+      <div className="login-actions" id="login-actions" data-testid="login-actions" data-qa="login-actions">
         <button
           className="login-btn"
           id="login-btn"

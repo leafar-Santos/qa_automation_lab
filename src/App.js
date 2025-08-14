@@ -20,7 +20,7 @@ import {
 // Lê o valor do hash na URL
 const getRotaAtual = () => {
   const hash = window.location.hash.replace("#", "");
-  return hash || "login";
+  return hash || "carrinho-de-compras";
 };
 
 function App() {

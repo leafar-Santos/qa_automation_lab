@@ -25,6 +25,26 @@ export default function CadastroUsuario() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    if (name === "cpf") {
+      const numeros = value.replace(/\D/g, "").slice(0, 11);
+      const formatado = numeros
+        .replace(/^(\d{3})(\d)/, "$1.$2")
+        .replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3")
+        .replace(/\.(\d{3})(\d)/, ".$1-$2");
+      setFormData((prev) => ({ ...prev, cpf: formatado }));
+      return;
+    }
+
+    if (name === "telefone") {
+      const numeros = value.replace(/\D/g, "").slice(0, 11);
+      const formatado = numeros
+        .replace(/^(\d{2})(\d)/, "($1) $2")
+        .replace(/(\d{5})(\d)/, "$1-$2");
+      setFormData((prev) => ({ ...prev, telefone: formatado }));
+      return;
+    }
+
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -37,6 +57,13 @@ export default function CadastroUsuario() {
       toast.error("Preencha os campos obrigatórios!");
       return;
     }
+
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email);
+    if (!emailValido) {
+      toast.error("E-mail inválido!");
+      return;
+    }
+
     setPreviewData(formData);
     setFormData({
       nome: "",
@@ -70,107 +97,80 @@ export default function CadastroUsuario() {
   };
 
   return (
-    <div className="cad-wrapper" data-testid="cad-wrapper" data-qa="cad-wrapper">
-      {/* FORM */}
-      <div className="cad-card" id="cad-card" data-testid="cad-card" data-qa="cad-card">
-        <h1 className="cad-title" id="cad-title" data-testid="cad-title" data-qa="cad-title">
-          Cadastro de Usuário
-        </h1>
+    <div className="cad-wrapper">
+      <div className="cad-card">
+        <h1 className="cad-title">Cadastro de Usuário</h1>
 
-        <div className="cad-field" id="cad-field-nome" data-testid="cad-field-nome" data-qa="cad-field-nome">
-          <label className="cad-label" htmlFor="nome-input" id="nome-label" data-testid="nome-label" data-qa="nome-label">
-            Nome completo
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="nome-input">Nome completo</label>
           <input
             type="text"
             className="cad-input"
             id="nome-input"
             name="nome"
-            data-testid="nome-input"
-            data-qa="nome-input"
             placeholder="Nome Sobrenome"
             value={formData.nome}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-field" id="cad-field-email" data-testid="cad-field-email" data-qa="cad-field-email">
-          <label className="cad-label" htmlFor="email-input" id="email-label" data-testid="email-label" data-qa="email-label">
-            E-mail
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="email-input">E-mail</label>
           <input
             type="email"
             className="cad-input"
             id="email-input"
             name="email"
-            data-testid="email-input"
-            data-qa="email-input"
             placeholder="seu_email@email.com"
             value={formData.email}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-field" id="cad-field-cpf" data-testid="cad-field-cpf" data-qa="cad-field-cpf">
-          <label className="cad-label" htmlFor="cpf-input" id="cpf-label" data-testid="cpf-label" data-qa="cpf-label">
-            CPF
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="cpf-input">CPF</label>
           <input
             type="text"
             className="cad-input"
             id="cpf-input"
             name="cpf"
-            data-testid="cpf-input"
-            data-qa="cpf-input"
             placeholder="000.000.000-00"
             value={formData.cpf}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-field" id="cad-field-telefone" data-testid="cad-field-telefone" data-qa="cad-field-telefone">
-          <label className="cad-label" htmlFor="telefone-input" id="telefone-label" data-testid="telefone-label" data-qa="telefone-label">
-            Telefone
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="telefone-input">Telefone</label>
           <input
             type="text"
             className="cad-input"
             id="telefone-input"
             name="telefone"
-            data-testid="telefone-input"
-            data-qa="telefone-input"
             placeholder="(11) 99999-9999"
             value={formData.telefone}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-field" id="cad-field-data-nascimento" data-testid="cad-field-data-nascimento" data-qa="cad-field-data-nascimento">
-          <label className="cad-label" htmlFor="data-nascimento-input" id="data-nascimento-label" data-testid="data-nascimento-label" data-qa="data-nascimento-label">
-            Data de nascimento
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="data-nascimento-input">Data de nascimento</label>
           <input
             type="date"
             className="cad-input"
             id="data-nascimento-input"
             name="dataNascimento"
-            data-testid="data-nascimento-input"
-            data-qa="data-nascimento-input"
             value={formData.dataNascimento}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-field" id="cad-field-sexo" data-testid="cad-field-sexo" data-qa="cad-field-sexo">
-          <label className="cad-label" htmlFor="sexo-select" id="sexo-label" data-testid="sexo-label" data-qa="sexo-label">
-            Sexo
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="sexo-select">Sexo</label>
           <select
             className="cad-input"
             id="sexo-select"
             name="sexo"
-            data-testid="sexo-select"
-            data-qa="sexo-select"
             value={formData.sexo}
             onChange={handleChange}
           >
@@ -182,55 +182,40 @@ export default function CadastroUsuario() {
           </select>
         </div>
 
-        <div className="cad-field" id="cad-field-cargo" data-testid="cad-field-cargo" data-qa="cad-field-cargo">
-          <label className="cad-label" htmlFor="cargo-input" id="cargo-label" data-testid="cargo-label" data-qa="cargo-label">
-            Cargo
-          </label>
+        <div className="cad-field">
+          <label className="cad-label" htmlFor="cargo-input">Cargo</label>
           <input
             type="text"
             className="cad-input"
             id="cargo-input"
             name="cargo"
-            data-testid="cargo-input"
-            data-qa="cargo-input"
             placeholder="Analista de QA"
             value={formData.cargo}
             onChange={handleChange}
           />
         </div>
 
-        <div className="cad-actions" data-testid="cad-actions">
-          <button className="cad-btn" onClick={handleSalvar} data-testid="cad-btn-salvar">
-            Salvar
-          </button>
-          <button className="cad-btn cad-btn-cancel" onClick={handleLimpar} data-testid="cad-btn-limpar">
-            Limpar dados
-          </button>
+        <div className="cad-actions">
+          <button className="cad-btn" onClick={handleSalvar}>Salvar</button>
+          <button className="cad-btn cad-btn-cancel" onClick={handleLimpar}>Limpar dados</button>
         </div>
       </div>
 
-      {/* Preview */}
       {previewData && (
-        <div className="cad-preview" data-testid="cad-preview">
+        <div className="cad-preview">
           <h2 className="cad-preview-title">Dados Cadastrados</h2>
           <ul className="cad-preview-list">
-            <li><strong>Nome:</strong> <span data-testid="pv-nome">{previewData.nome}</span></li>
-            <li><strong>Email:</strong> <span data-testid="pv-email">{previewData.email}</span></li>
-            <li><strong>CPF:</strong> <span data-testid="pv-cpf">{previewData.cpf}</span></li>
-            <li><strong>Telefone:</strong> <span data-testid="pv-telefone">{previewData.telefone}</span></li>
-            <li><strong>Data de Nascimento:</strong> <span data-testid="pv-data">{previewData.dataNascimento}</span></li>
-            <li>
-              <strong>Sexo:</strong>{" "}
-              <span data-testid="pv-sexo">
-                {sexoLabels[previewData.sexo] || ""}
-              </span>
-            </li>
-            <li><strong>Cargo:</strong> <span data-testid="pv-cargo">{previewData.cargo}</span></li>
+            <li><strong>Nome:</strong> {previewData.nome}</li>
+            <li><strong>Email:</strong> {previewData.email}</li>
+            <li><strong>CPF:</strong> {previewData.cpf}</li>
+            <li><strong>Telefone:</strong> {previewData.telefone}</li>
+            <li><strong>Data de Nascimento:</strong> {previewData.dataNascimento}</li>
+            <li><strong>Sexo:</strong> {sexoLabels[previewData.sexo] || ""}</li>
+            <li><strong>Cargo:</strong> {previewData.cargo}</li>
           </ul>
         </div>
       )}
 
-      {/* Toasts */}
       <ToastContainer position="top-right" autoClose={4000} />
     </div>
   );
