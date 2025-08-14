@@ -7,6 +7,7 @@ import ListaDeTarefas from './components/ListaDeTarefas/ListaDeTarefas';
 import MiniTrello from './components/MiniTrello/MiniTrello';
 import CarrinhoDeCompras from './components/CheckoutPagamento/CarrinhoDeCompras';
 import Calculadora from './components/Calculadora/Calculadora';
+import PerguntasERespostas from './components/PerguntasERespostas/PerguntasERespostas';
 
 import {
   FaShoppingCart,
@@ -15,6 +16,7 @@ import {
   FaTasks,
   FaProjectDiagram,
   FaCalculator,
+  FaGamepad
 } from "react-icons/fa";
 
 // Lê o valor do hash na URL
@@ -33,6 +35,8 @@ function App() {
     { id: 'lista-de-tarefas', nome: 'Lista de Tarefas', icon: <FaTasks /> },
     { id: 'mini-trello', nome: 'Mini Trello', icon: <FaProjectDiagram /> },
     { id: 'calculadora', nome: 'Calculadora', icon: <FaCalculator /> },
+    { id: 'perguntas-e-respostas', nome: 'Perguntas e Respostas', icon: <FaGamepad /> }
+
   ];
 
   // Atualiza a URL quando a rota muda
@@ -65,6 +69,7 @@ function App() {
         {rotaAtiva === 'lista-de-tarefas' && <ListaDeTarefas />}
         {rotaAtiva === 'mini-trello' && <MiniTrello />}
         {rotaAtiva === 'calculadora' && <Calculadora />}
+        {rotaAtiva === 'perguntas-e-respostas' && <PerguntasERespostas/>}
       </div>
     </div>
   );

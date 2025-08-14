@@ -1,0 +1,484 @@
+[
+  {
+    "pergunta": "Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?",
+    "alternativas": [
+      "Tem entre 2 a 4 litros. São retirados 450 mililitros",
+      "Tem entre 4 a 6 litros. São retirados 450 mililitros",
+      "Tem 10 litros. São retirados 2 litros",
+      "Tem 7 litros. São retirados 1,5 litros",
+      "Tem 0,5 litros. São retirados 0,5 litros"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "De quem é a famosa frase “Penso, logo existo”?",
+    "alternativas": [
+      "Platão",
+      "Galileu Galilei",
+      "Descartes",
+      "Sócrates",
+      "Francis Bacon"
+    ],
+    "correta": 2,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "De onde é a invenção do chuveiro elétrico?",
+    "alternativas": [
+      "França",
+      "Inglaterra",
+      "Brasil",
+      "Austrália",
+      "Itália"
+    ],
+    "correta": 2,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Quais o menor e o maior país do mundo?",
+    "alternativas": [
+      "Vaticano e Rússia",
+      "Nauru e China",
+      "Mônaco e Canadá",
+      "Malta e Estados Unidos",
+      "São Marino e Índia"
+    ],
+    "correta": 0,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual o nome do presidente do Brasil que ficou conhecido como Jango?",
+    "alternativas": [
+      "Jânio Quadros",
+      "Jacinto Anjos",
+      "Getúlio Vargas",
+      "João Figueiredo",
+      "João Goulart"
+    ],
+    "correta": 4,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual o grupo em que todas as palavras foram escritas corretamente?",
+    "alternativas": [
+      "Asterístico, beneficiente, meteorologia, entertido",
+      "Asterisco, beneficente, meteorologia, entretido",
+      "Asterisco, beneficente, metereologia, entretido",
+      "Asterístico, beneficiente, metereologia, entretido",
+      "Asterisco, beneficiente, metereologia, entretido"
+    ],
+    "correta": 1,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Qual o livro mais vendido no mundo a seguir à Bíblia?",
+    "alternativas": [
+      "O Senhor dos Anéis",
+      "Dom Quixote",
+      "O Pequeno Príncipe",
+      "Ela, a Feiticeira",
+      "Um Conto de Duas Cidades"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Quantas casas decimais tem o número pi?",
+    "alternativas": [
+      "Duas",
+      "Centenas",
+      "Infinitas",
+      "Vinte",
+      "Milhares"
+    ],
+    "correta": 2,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Atualmente, quantos elementos químicos a tabela periódica possui?",
+    "alternativas": [
+      "113",
+      "109",
+      "108",
+      "118",
+      "92"
+    ],
+    "correta": 3,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Quais os países que têm a maior e a menor expectativa de vida do mundo?",
+    "alternativas": [
+      "Japão e Serra Leoa",
+      "Austrália e Afeganistão",
+      "Itália e Chade",
+      "Brasil e Congo",
+      "Estados Unidos e Angola"
+    ],
+    "correta": 0,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "O que a palavra 'legend' significa em português?",
+    "alternativas": [
+      "Legenda",
+      "Conto",
+      "História",
+      "Lenda",
+      "Legendário"
+    ],
+    "correta": 3,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Qual o número mínimo de jogadores em cada time numa partida de futebol?",
+    "alternativas": [
+      "8",
+      "10",
+      "9",
+      "5",
+      "7"
+    ],
+    "correta": 4,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Quem pintou a obra 'Guernica'?",
+    "alternativas": [
+      "Paul Cézanne",
+      "Pablo Picasso",
+      "Diego Rivera",
+      "Tarsila do Amaral",
+      "Salvador Dalí"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Quanto tempo a luz do Sol demora para chegar à Terra?",
+    "alternativas": [
+      "12 minutos",
+      "1 dia",
+      "12 horas",
+      "8 minutos",
+      "12 segundos"
+    ],
+    "correta": 3,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual a nacionalidade de Che Guevara?",
+    "alternativas": [
+      "Cubana",
+      "Peruana",
+      "Panamenha",
+      "Boliviana",
+      "Argentina"
+    ],
+    "correta": 4,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Quais são os três predadores do reino animal reconhecidos pela habilidade de caçar em grupo, se camuflar e ter sentidos apurados?",
+    "alternativas": [
+      "Tubarão branco, crocodilo e sucuri",
+      "Tigre, gavião e orca",
+      "Hiena, urso branco e lobo cinzento",
+      "Orca, onça e tarântula",
+      "Leão, tubarão branco e urso cinzento"
+    ],
+    "correta": 2,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Qual a altura da rede de vôlei nos jogos masculino e feminino?",
+    "alternativas": [
+      "2,4 para ambos",
+      "2,5 m e 2,0 m",
+      "1,8 m e 1,5 m",
+      "2,45 m e 2,15 m",
+      "2,43 m e 2,24 m"
+    ],
+    "correta": 4,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Em que período da pré-história o fogo foi descoberto?",
+    "alternativas": [
+      "Neolítico",
+      "Paleolítico",
+      "Idade dos Metais",
+      "Período da Pedra Polida",
+      "Idade Média"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual a montanha mais alta do Brasil?",
+    "alternativas": [
+      "Pico da Neblina",
+      "Pico Paraná",
+      "Monte Roraima",
+      "Pico Maior de Friburgo",
+      "Pico da Bandeira"
+    ],
+    "correta": 0,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual a velocidade da luz no vácuo?",
+    "alternativas": [
+      "300.000.000 m/s",
+      "150.000.000 m/s",
+      "199.792.458 m/s",
+      "299.792.458 m/s",
+      "30.000.000 m/s"
+    ],
+    "correta": 3,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Quem é o autor de 'O Príncipe'?",
+    "alternativas": [
+      "Maquiavel",
+      "Antoine de Saint-Exupéry",
+      "Montesquieu",
+      "Thomas Hobbes",
+      "Rousseau"
+    ],
+    "correta": 0,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual o metal cujo símbolo químico é o Au?",
+    "alternativas": [
+      "Cobre",
+      "Prata",
+      "Mercúrio",
+      "Ouro",
+      "Manganês"
+    ],
+    "correta": 3,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Qual personagem folclórico costuma ser agradado pelos caçadores com a oferta de fumo?",
+    "alternativas": [
+      "Caipora",
+      "Saci",
+      "Lobisomem",
+      "Boitatá",
+      "Negrinho do Pastoreio"
+    ],
+    "correta": 0,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Quem pintou o teto da Capela Sistina?",
+    "alternativas": [
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Rafael",
+      "Sandro Botticelli",
+      "Donatello"
+    ],
+    "correta": 0,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Em qual das orações abaixo a palavra foi empregada incorretamente?",
+    "alternativas": [
+      "Mais uma vez, portou-se mal.",
+      "É um homem mal.",
+      "Esse é o mal de todos.",
+      "Mal falou nele, o fulano apareceu.",
+      "É um mau vendedor."
+    ],
+    "correta": 1,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Qual foi o recurso utilizado inicialmente pelo homem para explicar a origem das coisas?",
+    "alternativas": [
+      "A Filosofia",
+      "A Biologia",
+      "A Matemática",
+      "A Astronomia",
+      "A Mitologia"
+    ],
+    "correta": 4,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Qual das alternativas menciona apenas símbolos nacionais?",
+    "alternativas": [
+      "Bandeira insígnia da presidência, bandeira nacional, brasão, hinos e selo",
+      "Bandeira nacional, armas nacionais, hino nacional e selo nacional",
+      "Bandeira nacional, brasão, hino nacional e hino da independência",
+      "Bandeira nacional, cores nacionais, hino nacional e hino da independência",
+      "Bandeira insígnia da presidência, brasão flora e fauna e hinos"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual era o nome de Aleijadinho?",
+    "alternativas": [
+      "Alexandrino Francisco Lisboa",
+      "Manuel Francisco Lisboa",
+      "Alex Francisco Lisboa",
+      "Francisco Antônio Lisboa",
+      "Antônio Francisco Lisboa"
+    ],
+    "correta": 4,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual destes países é transcontinental?",
+    "alternativas": [
+      "Rússia",
+      "Filipinas",
+      "Marrocos",
+      "Groenlândia",
+      "Tanzânia"
+    ],
+    "correta": 0,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual foi o primeiro homem a pisar na Lua e em que ano?",
+    "alternativas": [
+      "Yuri Gagarin, em 1961",
+      "Buzz Aldrin, em 1969",
+      "Charles Conrad, em 1969",
+      "Charles Duke, em 1971",
+      "Neil Armstrong, em 1969"
+    ],
+    "correta": 4,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Quantos graus são necessários para que dois ângulos sejam complementares?",
+    "alternativas": [
+      "45",
+      "60",
+      "90",
+      "180",
+      "360"
+    ],
+    "correta": 2,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Quem foi o criador da tragédia grega?",
+    "alternativas": [
+      "Homero",
+      "Eurípedes",
+      "Plutarco",
+      "Ésquilo",
+      "Sófocles"
+    ],
+    "correta": 3,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Jim Morrison era vocalista de que grupo?",
+    "alternativas": [
+      "The Police",
+      "The Doors",
+      "Pink Floyd",
+      "Nirvana",
+      "AC/DC"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Qual destas obras arquitetônicas brasileiras é uma das Sete Maravilhas do Mundo Moderno?",
+    "alternativas": [
+      "Elevador Lacerda",
+      "Cristo Redentor",
+      "Estação da Luz",
+      "One Tower",
+      "Palácio da Alvorada"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Em que país nasceu Clarice Lispector?",
+    "alternativas": [
+      "Portugal",
+      "Rússia",
+      "Brasil",
+      "Ucrânia",
+      "França"
+    ],
+    "correta": 3,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Quais dos órgãos abaixo pertencem ao sistema respiratório?",
+    "alternativas": [
+      "Laringe e traqueia",
+      "Pulmões e faringe",
+      "Esôfago e brônquios",
+      "Tireoide e hipófise",
+      "Pâncreas e vasos sanguíneos"
+    ],
+    "correta": 0,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "O que é um filantropo?",
+    "alternativas": [
+      "Pessoa que tem excesso de confiança",
+      "Pessoa egoísta",
+      "Pessoa que pratica a caridade",
+      "Canto gregoriano",
+      "Poema de quatro versos"
+    ],
+    "correta": 2,
+    "dificuldade": 1
+  },
+  {
+    "pergunta": "Que animal 'gruguleja'?",
+    "alternativas": [
+      "O pavão",
+      "A garça",
+      "O papagaio",
+      "A cacatua",
+      "O peru"
+    ],
+    "correta": 4,
+    "dificuldade": 3
+  },
+  {
+    "pergunta": "Qual é o maior arquipélago da Terra?",
+    "alternativas": [
+      "As Filipinas",
+      "A Indonésia",
+      "As Bahamas",
+      "A Finlândia",
+      "As Maldivas"
+    ],
+    "correta": 1,
+    "dificuldade": 2
+  },
+  {
+    "pergunta": "Que substância é absorvida pelas plantas e expirada por todos os seres vivos?",
+    "alternativas": [
+      "O oxigênio",
+      "O nitrogênio",
+      "O nitrato de sódio",
+      "O dióxido de ferro",
+      "O dióxido de carbono"
+    ],
+    "correta": 4,
+    "dificuldade": 1
+  }
+]
+
+
