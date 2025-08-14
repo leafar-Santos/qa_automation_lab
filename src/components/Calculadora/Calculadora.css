@@ -1,0 +1,109 @@
+.calculadora-wrapper {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 24px;
+  background: linear-gradient(135deg, #f0f9ff, #dbeafe);
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.calculadora-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.calculadora-display {
+  width: 93%;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  margin-bottom: 20px;
+  text-align: right;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.calculadora-botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calculadora-botoes button {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: #e2e8f0;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calculadora-botoes button:hover {
+  background: #cbd5e1;
+}
+
+.calculadora-botoes .btn-operador {
+  background: #38bdf8;
+  color: white;
+}
+
+.calculadora-botoes .btn-operador:hover {
+  background: #0ea5e9;
+}
+
+.calculadora-botoes .btn-igual {
+  background: #22c55e;
+  color: white;
+}
+
+.calculadora-botoes .btn-igual:hover {
+  background: #16a34a;
+}
+
+.calculadora-botoes .btn-limpar {
+  grid-column: span 2;
+  background: #ef4444;
+  color: white;
+}
+
+.calculadora-botoes .btn-limpar:hover {
+  background: #dc2626;
+}
+
+.calculadora-botoes .btn-del {
+  background: #f59e0b;
+  color: white;
+}
+
+.calculadora-botoes .btn-del:hover {
+  background: #d97706;
+}
+
+@media (max-width: 480px) {
+  .calculadora-wrapper {
+    padding: 16px;
+  }
+
+  .calculadora-botoes {
+    gap: 10px;
+  }
+
+  .calculadora-botoes button {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .calculadora-display {
+    font-size: 18px;
+    padding: 14px;
+  }
+}

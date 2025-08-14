@@ -1,0 +1,80 @@
+.menu {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: #e3edf5;
+    color: #f8fafc;
+    padding: 24px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu .brand .t1 {
+    font-weight: 700;
+    color: #38bdf8;
+    font-size: 26px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.menu button.item {
+    background-color: rgba(100, 102, 102, 0.15);
+    width: 100%;
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    color: #282a2c;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu button.item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #73818f;
+    transform: translateX(4px);
+}
+
+.menu button.item.active {
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.4);
+}
+
+/* Ícones do menu */
+.menu .item-icon {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .item-label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 740px) {
+  .menu .brand .t1 {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .menu .item-label{
+    display: none;
+  }
+}
